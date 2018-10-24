@@ -1,0 +1,1 @@
+World.location_type=Misc.outdoors;

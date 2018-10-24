@@ -1,0 +1,198 @@
+Converting GML script : MACRO: NULL_STRING
+Converted string : line 1 : "\%$NULL STRING -> "\\%$NULL STRING
+
+Converting GML script : ${project_dir}\scripts\args\args.gml
+Converted description : /// @description  Arguments args(script, arg0, arg1..argn);/// @function  Arguments args
+/// @param script
+/// @param  arg0
+/// @param  arg1..argn
+
+Converting GML script : ${project_dir}\scripts\render_character\render_character.gml
+Converted description : /// @description  void render_character();/// @function  void render_character
+
+Converting GML script : ${project_dir}\scripts\getController\getController.gml
+Converted description : /// @description  boolean getController();/// @function  boolean getController
+
+Converting GML script : ${project_dir}\scripts\addSelfToGrid\addSelfToGrid.gml
+Converted description : /// @description  object addSelfToGrid();/// @function  object addSelfToGrid
+
+Converting GML script : ${project_dir}\scripts\is_free\is_free.gml
+Converted description : /// @description  boolean is_free(xx, yy);/// @function  boolean is_free
+/// @param xx
+/// @param  yy
+
+Converting GML script : ${project_dir}\scripts\draw_text_square\draw_text_square.gml
+Converted description : /// @description  void draw_text_square(x1, y, text1, x2, text2);/// @function  void draw_text_square
+/// @param x1
+/// @param  y
+/// @param  text1
+/// @param  x2
+/// @param  text2
+
+Converting GML script : ${project_dir}\scripts\null\null.gml
+Converted description : /// @description  void null(argument0..argumentn);/// @function  void null
+/// @param argument0..argumentn
+
+Converting GML script : ${project_dir}\scripts\newItem\newItem.gml
+Converted description : /// @description  ItemData newItem(name, description, price, weight, class, required?, [equip class, hardware class]);/// @function  ItemData newItem
+/// @param name
+/// @param  description
+/// @param  price
+/// @param  weight
+/// @param  class
+/// @param  required?
+/// @param  [equip class
+/// @param  hardware class]
+
+Converting GML script : ${project_dir}\scripts\instantiate\instantiate.gml
+Converted description : /// @description  Object instantiate(object);/// @function  Object instantiate
+/// @param object
+
+Converting GML script : ${project_dir}\scripts\statLevel\statLevel.gml
+Converted description : /// @description  int statLevel(experience);/// @function  int statLevel
+/// @param experience
+
+Converting GML script : ${project_dir}\scripts\GCF\GCF.gml
+Converted description : /// @description  int GCF(a, b);/// @function  int GCF
+/// @param a
+/// @param  b
+
+Converting GML script : ${project_dir}\scripts\getLevel\getLevel.gml
+Converted description : /// @description  int getLevel();/// @function  int getLevel
+
+Converting GML script : ${project_dir}\scripts\GetCardinalDirection\GetCardinalDirection.gml
+Converted description : /// @description  double GetCardinalDirection(angle);/// @function  double GetCardinalDirection
+/// @param angle
+
+Converting GML script : ${project_dir}\scripts\removeSelfFromGrid\removeSelfFromGrid.gml
+Converted description : /// @description  void removeSelfFromGrid();/// @function  void removeSelfFromGrid
+
+Converting GML script : ${project_dir}\scripts\distance3D\distance3D.gml
+Converted description : /// @description  distance3D(x1, y1, z1, x2, y2, z2);/// @function  distance3D
+/// @param x1
+/// @param  y1
+/// @param  z1
+/// @param  x2
+/// @param  y2
+/// @param  z2
+
+Converting GML script : ${project_dir}\scripts\GetStickMagnitude\GetStickMagnitude.gml
+Converted description : /// @description  double GetStickMagnitude(r, u);/// @function  double GetStickMagnitude
+/// @param r
+/// @param  u
+
+Converting GML script : ${project_dir}\scripts\IsClamped\IsClamped.gml
+Converted description : /// @description  boolean IsClamped(value, a, b);/// @function  boolean IsClamped
+/// @param value
+/// @param  a
+/// @param  b
+
+Converting GML script : ${project_dir}\scripts\GetStickAngle\GetStickAngle.gml
+Converted description : /// @description  double GetStickAngle(r, u);/// @function  double GetStickAngle
+/// @param r
+/// @param  u
+
+Converting GML script : ${project_dir}\scripts\process_player_controls\process_player_controls.gml
+Converted description : /// @description  void process_controls();/// @function  void process_controls
+
+Converting GML script : ${project_dir}\scripts\MatchCardinalDirection\MatchCardinalDirection.gml
+Converted description : /// @description  double MatchCardinalDirection(angle, magnitude, dir);/// @function  double MatchCardinalDirection
+/// @param angle
+/// @param  magnitude
+/// @param  dir
+
+Converting GML script : ${project_dir}\scripts\scr_set_scene\scr_set_scene.gml
+Converted description : /// @description  void scr_set_scene(actor, target, index);/// @function  void scr_set_scene
+/// @param actor
+/// @param  target
+/// @param  index
+
+Converting GML script : ${project_dir}\scripts\scr_talk\scr_talk.gml
+Converted description : /// @description  void scr_talk();/// @function  void scr_talk
+
+Converting GML script : ${project_dir}\scripts\scr_continue\scr_continue.gml
+Converted description : /// @description  void scr_continue();/// @function  void scr_continue
+
+Converting GML script : ${project_dir}\scripts\scr_self_lock_set\scr_self_lock_set.gml
+Converted description : /// @description  void scr_self_lock_set();/// @function  void scr_self_lock_set
+
+Converting GML script : ${project_dir}\scripts\scr_target_lock_unset\scr_target_lock_unset.gml
+Converted description : /// @description  void scr_target_lock_unset();/// @function  void scr_target_lock_unset
+
+Converting GML script : ${project_dir}\scripts\AddItem\AddItem.gml
+Converted description : /// @description  void AddItem(Solid, index, quantity);/// @function  void AddItem
+/// @param Solid
+/// @param  index
+/// @param  quantity
+
+Converting GML script : ${project_dir}\scripts\scr_turn_to_face\scr_turn_to_face.gml
+Converted description : /// @description  void scr_turn_to_face();/// @function  void scr_turn_to_face
+
+Converting GML script : ${project_dir}\scripts\scr_self_lock_unset\scr_self_lock_unset.gml
+Converted description : /// @description  void scr_self_lock_unset();/// @function  void scr_self_lock_unset
+
+Converting GML script : ${project_dir}\scripts\HasItem\HasItem.gml
+Converted description : /// @description  ItemStack HasItem(Solid, index);/// @function  ItemStack HasItem
+/// @param Solid
+/// @param  index
+
+Converting GML script : ${project_dir}\scripts\scr_add_item\scr_add_item.gml
+Converted description : /// @description  void scr_add_item();/// @function  void scr_add_item
+
+Converting GML script : ${project_dir}\scripts\set_pause\set_pause.gml
+Converted description : /// @description  void set_pause(stage);/// @function  void set_pause
+/// @param stage
+
+Converting GML script : ${project_dir}\scripts\scr_target_lock_set\scr_target_lock_set.gml
+Converted description : /// @description  void scr_target_lock_set();/// @function  void scr_target_lock_set
+
+Converting GML script : ${project_dir}\scripts\pause_game\pause_game.gml
+Converted description : /// @description  void pause_game(target);/// @function  void pause_game
+/// @param target
+
+Converting GML script : ${project_dir}\objects\Player\Create_0.gml
+Converted description : /// @description  extends Character
+
+Converting GML script : ${project_dir}\objects\Character\Create_0.gml
+Converted description : /// @description  extends Solid
+
+Converting GML script : ${project_dir}\objects\Controller\Step_1.gml
+Converted string : line 87 : 'A' -> "A"
+Converted string : line 87 : 'D' -> "D"
+Converted string : line 88 : 'W' -> "W"
+Converted string : line 88 : 'S' -> "S"
+Converted string : line 97 : 'E' -> "E"
+Converted string : line 98 : 'G' -> "G"
+Converted string : line 99 : 'R' -> "R"
+
+Converting GML script : ${project_dir}\objects\World\Create_0.gml
+Converted builtin : line 31 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 32 : view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin : line 33 : view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin : line 34 : view_hview -> __view_get( e__VW.HView, 0 )
+
+Converting GML script : ${project_dir}\objects\World\Step_0.gml
+Converted builtin : line 9 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 6 : view_xview=clamp(Player.x-view_wview/2, 0, room_width-view_wview -> __view_set( e__VW.XView, 0, clamp(Player.x-view_wview/2, 0, room_width-view_wview )
+Converted builtin : line 10 : view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin : line 7 : view_yview=clamp(Player.y-view_hview/2, 0, room_height-view_hview -> __view_set( e__VW.YView, 0, clamp(Player.y-view_hview/2, 0, room_height-view_hview )
+Converted builtin : line 11 : view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin : line 12 : view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin : line 6 : view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin : line 6 : view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin : line 7 : view_hview -> __view_get( e__VW.HView, 0 )
+Converted builtin : line 7 : view_hview -> __view_get( e__VW.HView, 0 )
+
+Resource name collision 'Main' already exists, renamed to 'Main_rooms'
+macOS icon ${options_dir}\mac\icons\icon512.png written out as 32-bit.
+game speed set to 30
+added compatibility script background/draw_background_general.gml
+added compatibility script instance/instance_create.gml
+added compatibility script object/object_get_depth.gml
+added compatibility script view/__view_get.gml
+added compatibility script view/__view_set.gml
+added compatibility script view/__view_set_internal.gml
+added compatibility script background/__init_background.gml
+added compatibility script view/__init_view.gml
+added compatibility script __init_global.gml
+added compatibility script __global_object_depths.gml
