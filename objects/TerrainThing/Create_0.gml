@@ -2,8 +2,7 @@
 xx=x div GRID_CELL_WIDTH;
 yy=y div GRID_CELL_HEIGHT;
 render=null;
-react_to_attack=null;
-react_to_magic=null;
+react_to_attack=react_inanimate;
 actor_index=Actors.no;
 owner_index=Actors.no;
 cutscene_index="default";
@@ -13,3 +12,5 @@ var_int=0;
 var_string="";
 var_coordinate_x=0;
 var_coordinate_y=0;
+
+get_alive=alive_inanimate;

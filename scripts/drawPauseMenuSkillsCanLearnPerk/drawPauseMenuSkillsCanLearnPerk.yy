@@ -1,8 +1,11 @@
 {
-    "id": "ca111e2a-1248-43e8-98d8-4d204fd0efee",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "drawPauseMenuSkillsCanLearnPerk",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "resourceType": "GMScript",
+  "resourceVersion": "1.0",
+  "name": "drawPauseMenuSkillsCanLearnPerk",
+  "isCompatibility": false,
+  "isDnD": false,
+  "parent": {
+    "name": "Pause",
+    "path": "folders/Scripts/Graphics/Pause.yy",
+  },
 }

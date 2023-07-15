@@ -1,8 +1,11 @@
 {
-    "id": "d33d758b-1160-4b4f-aa48-233b1a9864b5",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "render_character_player",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "resourceType": "GMScript",
+  "resourceVersion": "1.0",
+  "name": "render_character_player",
+  "isCompatibility": false,
+  "isDnD": false,
+  "parent": {
+    "name": "Graphics",
+    "path": "folders/Scripts/Graphics.yy",
+  },
 }

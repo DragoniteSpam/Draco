@@ -2,12 +2,22 @@
 /// @function  ItemStack HasItem
 /// @param ActorIndex
 /// @param  index
+///	@param	[useStrictActor?]
+function HasItem() {
 
-var actor=GetMyActor(argument0);
+	if (argument_count==3&&argument[2]){
+		var actor=argument[0];
+	} else {
+		var actor=GetMyActor(argument[0]);
+	}
 
-for (var i=0; i<ds_list_size(actor.inventory); i++){
-    if (actor.inventory[| i].index==argument1)
-        return actor.inventory[| i];
+	for (var i=0; i<ds_list_size(actor.inventory); i++){
+	    if (actor.inventory[| i].index==argument[1])
+	        return actor.inventory[| i];
+	}
+
+	return noone;
+
+
+
 }
-
-return noone;

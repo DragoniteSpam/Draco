@@ -1,8 +1,11 @@
 {
-    "id": "94dbec38-ef72-40ca-9767-30a28d96360f",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "RemoveItem",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "resourceType": "GMScript",
+  "resourceVersion": "1.0",
+  "name": "RemoveItem",
+  "isCompatibility": false,
+  "isDnD": false,
+  "parent": {
+    "name": "Items",
+    "path": "folders/Scripts/Scripting/Code/Items.yy",
+  },
 }

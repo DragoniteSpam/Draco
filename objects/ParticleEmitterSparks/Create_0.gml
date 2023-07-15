@@ -1,8 +1,7 @@
-/// @description Insert description here
-// You can write your code in this editor
+/// @description Set up the light and particle emitter
 
-var system=World.all_effect_systems[Effects.sparks];
-var part=World.all_effect_types[Effects.sparks];
+var system=all_effect_systems[Effects.sparks];
+var part=all_effect_types[Effects.sparks];
 
 emitter=part_emitter_create(system);
 part_emitter_region(system, emitter, x, x, y, y, ps_shape_rectangle, ps_distr_linear);

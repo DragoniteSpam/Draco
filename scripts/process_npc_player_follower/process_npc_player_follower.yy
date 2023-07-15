@@ -1,8 +1,11 @@
 {
-    "id": "c50d368a-11a6-4950-b47a-8222a20ccee8",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "process_npc_player_follower",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "resourceType": "GMScript",
+  "resourceVersion": "1.0",
+  "name": "process_npc_player_follower",
+  "isCompatibility": false,
+  "isDnD": false,
+  "parent": {
+    "name": "Process",
+    "path": "folders/Scripts/Scripting/Process.yy",
+  },
 }

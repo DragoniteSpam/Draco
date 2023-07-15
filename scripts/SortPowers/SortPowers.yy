@@ -1,8 +1,11 @@
 {
-    "id": "aab3fc1d-503f-48a3-9693-7dbb24c17fe2",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "SortPowers",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "resourceType": "GMScript",
+  "resourceVersion": "1.0",
+  "name": "SortPowers",
+  "isCompatibility": false,
+  "isDnD": false,
+  "parent": {
+    "name": "Magic",
+    "path": "folders/Scripts/Scripting/Code/Magic.yy",
+  },
 }

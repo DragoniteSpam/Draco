@@ -1,8 +1,11 @@
 {
-    "id": "c08a5f55-1427-4a6d-af08-9a336af1eacd",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "EquipLeftHand",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "resourceType": "GMScript",
+  "resourceVersion": "1.0",
+  "name": "EquipLeftHand",
+  "isCompatibility": false,
+  "isDnD": false,
+  "parent": {
+    "name": "Items",
+    "path": "folders/Scripts/Scripting/Code/Items.yy",
+  },
 }

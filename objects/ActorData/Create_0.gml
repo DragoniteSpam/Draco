@@ -24,9 +24,10 @@ equip_shout=noone;
 
 // skills and variables
 
-race=get_random_race();
+//race=get_random_race();
+race=Races.inanimate;
 
-var s=array_length_1d(World.all_skills);
+var s=array_length_1d(all_skills);
 skill_exp=array_create(s);
 skill_level=array_create(s);
 for (var i=0; i<s; i++){
@@ -60,6 +61,15 @@ alpha=1;
 target_alpha=1;
 defeat_notify=false;
 blocking=false;
+required=false;
+ethereal=false;
+ward_points=0;
+alive=true;
+soul_trapped=false;
+
+health_bar_alpha=0;
+
+target=Actors.no;
 
 // stats
 

@@ -1,8 +1,11 @@
 {
-    "id": "319aff7e-cade-419c-ad45-fbb85dac8444",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "RegisterMyActor",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "resourceType": "GMScript",
+  "resourceVersion": "1.0",
+  "name": "RegisterMyActor",
+  "isCompatibility": false,
+  "isDnD": false,
+  "parent": {
+    "name": "Code",
+    "path": "folders/Scripts/Scripting/Code.yy",
+  },
 }

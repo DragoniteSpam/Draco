@@ -6,14 +6,18 @@
 /// @param  improve_multiplier
 /// @param  improve_offset
 ///	@param	sprite
+function newSkill() {
 
-with (instantiate(SkillData)){
-	name=argument[0];
-	description=argument[1];
-	skill_use_multiplier=argument[2];
-	skill_use_offset=argument[3];
-	skill_improve_multiplier=argument[4];
-	skill_improve_offset=argument[5];
-	sprite=argument[6];
-	return id;
+	with (instantiate(SkillData)){
+		name=argument[0];
+		description=argument[1];
+		skill_use_multiplier=argument[2];
+		skill_use_offset=argument[3];
+		skill_improve_multiplier=argument[4];
+		skill_improve_offset=argument[5];
+		sprite=argument[6];
+		return id;
+	}
+
+
 }

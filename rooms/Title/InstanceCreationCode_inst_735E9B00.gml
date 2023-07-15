@@ -1,1 +1,1 @@
-actor_index=Actors.new;
+actor_index = Actors.new_game;

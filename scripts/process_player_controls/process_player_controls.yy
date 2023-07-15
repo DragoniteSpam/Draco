@@ -1,8 +1,11 @@
 {
-    "id": "0a3856dd-8669-4f2f-953e-22ccc92e084d",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "process_player_controls",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "resourceType": "GMScript",
+  "resourceVersion": "1.0",
+  "name": "process_player_controls",
+  "isCompatibility": false,
+  "isDnD": false,
+  "parent": {
+    "name": "Process",
+    "path": "folders/Scripts/Scripting/Process.yy",
+  },
 }

@@ -1,8 +1,11 @@
 {
-    "id": "bb940143-fced-4861-b1ff-2f4b1dcc169b",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "removeSelfFromTerrain",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "resourceType": "GMScript",
+  "resourceVersion": "1.0",
+  "name": "removeSelfFromTerrain",
+  "isCompatibility": false,
+  "isDnD": false,
+  "parent": {
+    "name": "Grid",
+    "path": "folders/Scripts/Grid.yy",
+  },
 }

@@ -1,8 +1,11 @@
 {
-    "id": "713936c8-0715-4f89-8ebc-21eda471fc28",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "string_zero",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "resourceType": "GMScript",
+  "resourceVersion": "1.0",
+  "name": "string_zero",
+  "isCompatibility": false,
+  "isDnD": false,
+  "parent": {
+    "name": "Library",
+    "path": "folders/Scripts/Library.yy",
+  },
 }

@@ -5,16 +5,20 @@
 /// @param  skillRequirementArray
 ///	@param	prerequisiteArray
 /// @param  description
+function newPerk() {
 
-with (instantiate(PerkData)){
-	name=argument[0];
-	reflexive=argument[1];
+	with (instantiate(PerkData)){
+		name=argument[0];
+		reflexive=argument[1];
 
-	bonus=argument[2];
-	require=argument[3];
-	prereq=argument[4];
+		bonus=argument[2];
+		require=argument[3];
+		prereq=argument[4];
 	
-	description=argument[5];
+		description=argument[5];
 
-	return id;
+		return id;
+	}
+
+
 }

@@ -1,18 +1,17 @@
 ///	@description	Removes an item from the specified inventory.
-///	@param	item
+///	@param	ItemStack;
 ///	@param	quantity
 ///	@param	ActorIndex
+function RemoveItem(argument0, argument1, argument2) {
 
-var t=HasItem(argument2, argument0);
+	argument0.quantity-=argument1;
+	if (argument0.quantity<=0){
+	    RemoveItemStack(argument0, argument2);
+	    return false;
+	}
 
-if (t==noone){
-    return false;
+	return true;
+
+
+
 }
-
-t.quantity-=argument1;
-if (t.quantity<=0){
-    RemoveItemStack(t, argument2);
-    return false;
-}
-
-return true;

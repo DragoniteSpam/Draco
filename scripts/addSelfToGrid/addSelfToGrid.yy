@@ -1,8 +1,11 @@
 {
-    "id": "1698d3ce-31f8-41d9-8b4d-b6e8bf09b500",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "addSelfToGrid",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "resourceType": "GMScript",
+  "resourceVersion": "1.0",
+  "name": "addSelfToGrid",
+  "isCompatibility": false,
+  "isDnD": false,
+  "parent": {
+    "name": "Grid",
+    "path": "folders/Scripts/Grid.yy",
+  },
 }

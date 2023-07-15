@@ -1,8 +1,11 @@
 {
-    "id": "489b23f9-2fba-4fa1-8613-17a851fcae96",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "draw_skill_trainer",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "resourceType": "GMScript",
+  "resourceVersion": "1.0",
+  "name": "draw_skill_trainer",
+  "isCompatibility": false,
+  "isDnD": false,
+  "parent": {
+    "name": "UI",
+    "path": "folders/Scripts/Graphics/Draw Presets/UI.yy",
+  },
 }

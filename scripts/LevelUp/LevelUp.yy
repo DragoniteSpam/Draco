@@ -1,8 +1,11 @@
 {
-    "id": "fed4419d-5957-48f7-bf85-f07ad3bf617b",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "LevelUp",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "resourceType": "GMScript",
+  "resourceVersion": "1.0",
+  "name": "LevelUp",
+  "isCompatibility": false,
+  "isDnD": false,
+  "parent": {
+    "name": "Skills and Level",
+    "path": "folders/Scripts/Scripting/Code/Skills and Level.yy",
+  },
 }

@@ -1,8 +1,11 @@
 {
-    "id": "fab9d19a-d1c1-4216-8a70-3e461093264f",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "AddSoul",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "resourceType": "GMScript",
+  "resourceVersion": "1.0",
+  "name": "AddSoul",
+  "isCompatibility": false,
+  "isDnD": false,
+  "parent": {
+    "name": "Magic",
+    "path": "folders/Scripts/Scripting/Code/Magic.yy",
+  },
 }

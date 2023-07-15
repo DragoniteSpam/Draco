@@ -1,8 +1,11 @@
 {
-    "id": "f4701a57-679d-46c0-925e-0afbf997ef35",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "removeSelfFromEvent",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "resourceType": "GMScript",
+  "resourceVersion": "1.0",
+  "name": "removeSelfFromEvent",
+  "isCompatibility": false,
+  "isDnD": false,
+  "parent": {
+    "name": "Grid",
+    "path": "folders/Scripts/Grid.yy",
+  },
 }

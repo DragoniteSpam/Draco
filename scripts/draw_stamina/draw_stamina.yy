@@ -1,8 +1,11 @@
 {
-    "id": "695932d6-5d77-47e7-b15c-ab8704a478ff",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "draw_stamina",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "resourceType": "GMScript",
+  "resourceVersion": "1.0",
+  "name": "draw_stamina",
+  "isCompatibility": false,
+  "isDnD": false,
+  "parent": {
+    "name": "Draw Presets",
+    "path": "folders/Scripts/Graphics/Draw Presets.yy",
+  },
 }

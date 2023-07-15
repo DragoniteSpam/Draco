@@ -1,7 +1,5 @@
 // close down data structures
 event_inherited();
+World.grid[# xx, yy]=noone;
 
-ds_list_destroy(magic);
-ds_list_destroy(shouts);
-ds_list_destroy(effects);
-ds_list_destroy(powers);
+path_delete(ai_path);

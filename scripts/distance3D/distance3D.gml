@@ -6,7 +6,12 @@
 /// @param  x2
 /// @param  y2
 /// @param  z2
+function distance3D(argument0, argument1, argument2, argument3, argument4, argument5) {
 
-return sqrt((argument3-argument0)*(argument3-argument0)+
-    (argument4-argument1)*(argument4-argument1)+
-    (argument5-argument2)*(argument5-argument2));
+	return sqrt((argument3-argument0)*(argument3-argument0)+
+	    (argument4-argument1)*(argument4-argument1)+
+	    (argument5-argument2)*(argument5-argument2));
+
+
+
+}

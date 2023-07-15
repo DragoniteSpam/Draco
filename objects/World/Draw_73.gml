@@ -31,5 +31,5 @@ for (var i=view_xcell-4; i<view_xcell+view_wcell+4; i++){
 draw_set_alpha(1);
 gpu_set_blendmode(bm_normal);
 surface_reset_target();
-draw_surface_ext(light_surface, view_xcell*GRID_CELL_WIDTH, view_ycell*GRID_CELL_HEIGHT, 2*LIGHT_SURFACE_SCALE, 2*LIGHT_SURFACE_SCALE, 0, c_white, 1);
+//draw_surface_ext(light_surface, view_xcell*GRID_CELL_WIDTH, view_ycell*GRID_CELL_HEIGHT, 2*LIGHT_SURFACE_SCALE, 2*LIGHT_SURFACE_SCALE, 0, c_white, 1);
 surface_free(light_surface);

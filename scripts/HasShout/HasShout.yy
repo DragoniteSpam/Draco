@@ -1,8 +1,11 @@
 {
-    "id": "35f17593-df86-4ef9-b7e8-2889e164c1b2",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "HasShout",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "resourceType": "GMScript",
+  "resourceVersion": "1.0",
+  "name": "HasShout",
+  "isCompatibility": false,
+  "isDnD": false,
+  "parent": {
+    "name": "Magic",
+    "path": "folders/Scripts/Scripting/Code/Magic.yy",
+  },
 }

@@ -3,6 +3,11 @@
 /// @param value
 /// @param  a
 /// @param  b
-// Inclusive.
+function IsClamped(argument0, argument1, argument2) {
+	// Inclusive.
 
-return (argument0>=argument1&&argument0<=argument2);
+	return (argument0>=argument1&&argument0<=argument2);
+
+
+
+}

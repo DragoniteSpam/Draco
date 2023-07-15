@@ -1,8 +1,11 @@
 {
-    "id": "f221cc28-9fbd-43da-881a-c6af52e98701",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "GetCardinalDirection",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "resourceType": "GMScript",
+  "resourceVersion": "1.0",
+  "name": "GetCardinalDirection",
+  "isCompatibility": false,
+  "isDnD": false,
+  "parent": {
+    "name": "Math",
+    "path": "folders/Scripts/Library/Math.yy",
+  },
 }

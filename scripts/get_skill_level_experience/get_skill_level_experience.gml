@@ -1,13 +1,17 @@
 ///	@description	Returns the amount of experience needed to reach the current level.
-///	@param	Skill
+///	@param	skill
 ///	@param	level
+function get_skill_level_experience(argument0, argument1) {
 
-var t=0;
-var mult=World.all_skills[argument0].skill_improve_multiplier;
-var offset=World.all_skills[argument0].skill_improve_offset;
+	var t=0;
+	var mult=all_skills[argument0].skill_improve_multiplier;
+	var offset=all_skills[argument0].skill_improve_offset;
 
-for (var i=0; i<=argument1; i++){
-	t+=mult*power(i, SKILL_CURVE)+offset;
+	for (var i=0; i<=argument1; i++){
+		t+=mult*power(i, SKILL_CURVE)+offset;
+	}
+
+	return t;
+
+
 }
-
-return t;

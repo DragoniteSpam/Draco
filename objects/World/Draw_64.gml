@@ -33,21 +33,16 @@ with (Notification){
 // Dialogue
 
 var drawn_overlay=false;
-if (state==Misc.battle){
-	draw_battle();
+if (speaking){
+	draw_speaking();
 	drawn_overlay=true;
-} else {
-	if (speaking){
-		draw_speaking();
-		drawn_overlay=true;
-	} else if (pausing!=noone){
-	    drawPauseMenu();
-		drawn_overlay=true;
-	}
+} else if (pausing!=noone){
+	drawPauseMenu();
+	drawn_overlay=true;
+}
 
-	if (show_skill_trainer>-1){
-		draw_skill_trainer();
-	}
+if (show_skill_trainer>-1){
+	draw_skill_trainer();
 }
 
 // HP, MP and ST overlays

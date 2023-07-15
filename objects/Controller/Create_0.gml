@@ -134,6 +134,33 @@ release_pright=false;
 release_start=false;
 release_select=false;
 
+// Time input
+time_up=0;
+time_down=0;
+time_left=0;
+time_right=0;
+time_a=0;
+time_b=0;
+time_x=0;
+time_y=0;
+time_l=0;
+time_r=0;
+time_l2=0;
+time_r2=0;
+time_ls=0;
+time_rs=0;
+time_rup=0;
+time_rdown=0;
+time_rleft=0;
+time_rright=0;
+time_pup=0;
+time_pdown=0;
+time_pleft=0;
+time_pright=0;
+time_start=0;
+time_select=0;
+
+
 // Common terms
 interact=a;
 back=b||select;

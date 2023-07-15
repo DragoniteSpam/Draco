@@ -1,8 +1,13 @@
 /// @description  object addSelfToEvent();
-// if there's anything already in the event grid, it gets overwritten (but returned).
+function addSelfToEvent() {
+	// if there's anything already in the event grid, it gets overwritten (but returned).
 
-var n=World.event[# xx, yy];
+	var n=World.event[# xx, yy];
 
-World.event[# xx, yy]=id;
+	World.event[# xx, yy]=id;
 
-return n;
+	return n;
+
+
+
+}

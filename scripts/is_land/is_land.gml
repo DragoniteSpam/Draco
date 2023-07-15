@@ -2,4 +2,9 @@
 /// @function  boolean is_free
 /// @param xx
 /// @param  yy
-return World.terrain[# argument0, argument1]==Misc.land;
+function is_land(argument0, argument1) {
+	return World.terrain[# argument0, argument1]==Misc.land;
+
+
+
+}

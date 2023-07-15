@@ -16,7 +16,6 @@ _cc_ItemMetadata();
 _cc_Items();
 _cc_JS();
 _cc_MagicMetadata();
-_cc_Magic();
 _cc_Misc();
 _cc_PauseMenu();
 _cc_ShoutsAndPowers();
@@ -39,8 +38,6 @@ gpu_set_texfilter(false);
 application_surface_draw_enable(false);
 
 // Settings.
-invert_y=false;
-invert_x=false;
 use_controller=true;
 text_speed=TS_FAST;
 time_scale=30;
@@ -79,18 +76,8 @@ shade_alpha=0;
 pause_reset_variables();
 
 // Battle stuff
-battlers=array_create(32);
-battle_queue=noone;
 battle_difficulty=1;
-battle_text_t=0;
-battle_text="";
-battle_stage=Misc.bs_start;
-battle_t=0;
-battle_active=noone;
-battle_active_move=BattleOptions.no;
-battle_position=0;
-battle_target=0;
-battle_fleeable=true;
+battle_spawned=ds_list_create();
 
 // Timing. 
 game_current_second=current_second;
@@ -103,6 +90,9 @@ game_current_year=current_year;
 alarm[ALARM_EFFECT_TIMER]=game_get_speed(gamespeed_fps);
 
 day_alpha=0;
+
+// AI stuff.
+ai_grid=noone;
 
 room_goto(Title);
 

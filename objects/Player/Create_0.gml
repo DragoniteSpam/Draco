@@ -2,8 +2,6 @@
 event_inherited();
 
 // Extra variables for animations and stuff
-swinging=DIR_NULL;
-swing_index=0;
 follower=Actors.no;
 
 // mainly just a wrapper to give player controls to a Character,
@@ -13,6 +11,7 @@ control_script=process_player_controls;
 control_script_new_cell=process_player_controls_new_cell;
 control_script_post=process_player_controls_post;
 render=render_character_player;
+death_script=death_player;
 actor_index=Actors.playable;
 World.game_actors[Actors.playable].alias=id;
 
@@ -25,8 +24,14 @@ set_default_skills(player);
 
 AddGold(Actors.playable, 2000);
 
-TeachSpell(Actors.playable, Magic.flames, false);
-TeachSpell(Actors.playable, Magic.oakflesh, false);
+TeachSpell(Actors.playable, AllEffects.ChaosDamage, false);
+TeachSpell(Actors.playable, AllEffects.Conjour, false);
+TeachSpell(Actors.playable, AllEffects.Banish, false);
+TeachSpell(Actors.playable, AllEffects.SoulTrap, false);
+TeachSpell(Actors.playable, AllEffects.FrostDamage, false);
+TeachSpell(Actors.playable, AllEffects.Oakflesh, false);
+TeachSpell(Actors.playable, AllEffects.Command, false);
+TeachSpell(Actors.playable, AllEffects.AbsorbHealth, false);
 
 AddSoul(Actors.playable);
 AddSoul(Actors.playable);

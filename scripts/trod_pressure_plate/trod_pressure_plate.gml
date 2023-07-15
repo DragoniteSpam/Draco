@@ -1,2 +1,6 @@
-image_index=1;
-audio_play_sound(aud_button_press, 1, false);
+function trod_pressure_plate() {
+	image_index=1;
+	audio_play_sound(aud_button_press, 1, false);
+
+
+}

@@ -1,3 +1,4 @@
+function macros() {
 #macro DIR_NULL -1
 #macro TS_SLOW 1
 #macro TS_MEDIUM 2
@@ -30,17 +31,27 @@
 #macro DEPTH_PARTICLES_SUB	550
 #macro SEPIA_TONE	0.8
 #macro MILLION	1000000
-// Skills
+#macro	CONJOURATION_DURATION	120
+#macro	GAMEPAD_INDEX	1
+	// Skills
 #macro MAX_SKILL_LEVEL	100
 #macro SKILL_CURVE	1.95
 #macro DEFAULT_SKILL_LEVEL	15
 #macro DEFAULT_CHARACTER_LEVEL	1
 #macro SKILL_LEVEL	0
 #macro SKILL_EXP	1
-// Grid and rendering stuff
+	// Grid and rendering stuff
 #macro GRID_CELL_WIDTH	32
 #macro GRID_CELL_HEIGHT	32
 #macro ANIMATION_CYCLES_PER_SECOND	2
 #macro ANIMATION_ITEM_PER_SECOND	4
 #macro MAP_WIDTH	2048
 #macro MAP_HEIGHT	2048
+	// Alarms
+#macro	ALARM_ATTACK	0
+#macro	ALARM_CONJOURATION_EXPIRY	1
+	// Extra colors
+#macro	c_pink	merge_colour(c_red, c_white, 0.5)
+
+
+}

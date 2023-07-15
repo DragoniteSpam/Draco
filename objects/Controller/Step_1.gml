@@ -50,32 +50,32 @@ last_sneak=sneak;
 if (getController()){
     // If controller, gather raw input first. Can't be done all in one call because different buttons have
     // different functions to check them.
-    ls_x=gamepad_axis_value(0, gp_axislh);
-    ls_y=gamepad_axis_value(0, gp_axislv);
+    ls_x=gamepad_axis_value(GAMEPAD_INDEX, gp_axislh);
+    ls_y=gamepad_axis_value(GAMEPAD_INDEX, gp_axislv);
     ls_angle=GetStickAngle(ls_x, ls_y);
     ls_magnitude=GetStickMagnitude(ls_x, ls_y);
     up=MatchCardinalDirection(ls_angle, ls_magnitude, Directions.north);
     down=MatchCardinalDirection(ls_angle, ls_magnitude, Directions.south);
     left=MatchCardinalDirection(ls_angle, ls_magnitude, Directions.west);
     right=MatchCardinalDirection(ls_angle, ls_magnitude, Directions.east);
-    a=gamepad_button_check(0, gp_face1);
-    b=gamepad_button_check(0, gp_face2);
-    x=gamepad_button_check(0, gp_face3);
-    y=gamepad_button_check(0, gp_face4);
-    start=gamepad_button_check(0, gp_start);
-    select=gamepad_button_check(0, gp_select);
-    l=gamepad_button_check(0, gp_shoulderlb);
-    r=gamepad_button_check(0, gp_shoulderrb);
-    l2=gamepad_button_check(0, gp_shoulderl);
-    r2=gamepad_button_check(0, gp_shoulderr);
-    ls=gamepad_button_check(0, gp_stickl);
-    rs=gamepad_button_check(0, gp_stickr);
-    pup=gamepad_button_check(0, gp_padu);
-    pdown=gamepad_button_check(0, gp_padd);
-    pleft=gamepad_button_check(0, gp_padl);
-    pright=gamepad_button_check(0, gp_padr);
-    rs_x=gamepad_axis_value(0, gp_axisrh);
-    rs_y=gamepad_axis_value(0, gp_axisrv);
+    a=gamepad_button_check(GAMEPAD_INDEX, gp_face1);
+    b=gamepad_button_check(GAMEPAD_INDEX, gp_face2);
+    x=gamepad_button_check(GAMEPAD_INDEX, gp_face3);
+    y=gamepad_button_check(GAMEPAD_INDEX, gp_face4);
+    start=gamepad_button_check(GAMEPAD_INDEX, gp_start);
+    select=gamepad_button_check(GAMEPAD_INDEX, gp_select);
+    l=gamepad_button_check(GAMEPAD_INDEX, gp_shoulderlb);
+    r=gamepad_button_check(GAMEPAD_INDEX, gp_shoulderrb);
+    l2=gamepad_button_check(GAMEPAD_INDEX, gp_shoulderl);
+    r2=gamepad_button_check(GAMEPAD_INDEX, gp_shoulderr);
+    ls=gamepad_button_check(GAMEPAD_INDEX, gp_stickl);
+    rs=gamepad_button_check(GAMEPAD_INDEX, gp_stickr);
+    pup=gamepad_button_check(GAMEPAD_INDEX, gp_padu);
+    pdown=gamepad_button_check(GAMEPAD_INDEX, gp_padd);
+    pleft=gamepad_button_check(GAMEPAD_INDEX, gp_padl);
+    pright=gamepad_button_check(GAMEPAD_INDEX, gp_padr);
+    rs_x=gamepad_axis_value(GAMEPAD_INDEX, gp_axisrh);
+    rs_y=gamepad_axis_value(GAMEPAD_INDEX, gp_axisrv);
     rs_angle=GetStickAngle(rs_x, rs_y);
     rs_magnitude=GetStickMagnitude(rs_x, rs_y);
     rup=MatchCardinalDirection(rs_angle, rs_magnitude, Directions.north);
@@ -96,7 +96,7 @@ if (getController()){
     right=MatchCardinalDirection(ls_angle, ls_x, Directions.east);
     a=(keyboard_check_direct(vk_enter)||mouse_check_button(mb_left));
     b=(keyboard_check_direct(ord("J"))||mouse_check_button(mb_right));
-    x=keyboard_check_direct(ord("K"));
+    x=keyboard_check_direct(ord("K"))||keyboard_check_direct(vk_tab);
     y=keyboard_check_direct(ord("L"));
     start=keyboard_check_direct(vk_escape);
     select=keyboard_check_direct(vk_backspace);
@@ -116,10 +116,6 @@ if (getController()){
     // Mouse: only check these if the cursor is locked (not on a menu or something)
     rs_x=clamp((window_mouse_get_x()-window_get_width()/2)/10, -1, 1);
     rs_y=clamp((window_mouse_get_y()-window_get_height()/2)/10, -1, 1);
-    if (World.invert_y)
-        rs_y=-rs_y;
-    if (World.invert_x)
-        rs_x=-rs_x;
     rs_angle=GetStickAngle(rs_x, rs_y);
     rs_magnitude=GetStickMagnitude(rs_x, rs_y);
     rup=MatchCardinalDirection(rs_angle, rs_magnitude, Directions.north);
@@ -201,6 +197,32 @@ release_pleft=last_pleft&&(!pleft);
 release_pright=last_pright&&(!pright);
 release_start=last_start&&(!start);
 release_select=last_select&&(!select);
+
+// Input duration
+if (up||release_up) time_up++; else time_up=0;
+if (down||release_down) time_down++; else time_down=0;
+if (left||release_left) time_left++ else time_left=0;
+if (right||release_right) time_right++ else time_right=0;
+if (a||release_a) time_a++; else time_a=0;
+if (b||release_b) time_b++; else time_b=0;
+if (x||release_x) time_x++; else time_x=0;
+if (y||release_y) time_y++; else time_y=0;
+if (l||release_l) time_l++; else time_l=0;
+if (r||release_r) time_r++; else time_r=0;
+if (l2||release_l2) time_l2++; else time_l2=0;
+if (r2||release_r2) time_r2++; else time_r2=0;
+if (ls||release_ls) time_ls++; else time_ls=0;
+if (rs||release_rs) time_rs++; else time_rs=0;
+if (rup||release_rup) time_rup++; else time_rup=0;
+if (rdown||release_rdown) time_rdown++; else time_rdown=0;
+if (rleft||release_rleft) time_rleft++; else time_rleft=0;
+if (rright||release_rright) time_rright++; else time_rright=0;
+if (pup||release_pup) time_pup++; else time_pup=0;
+if (pdown||release_pdown) time_pdown++; else time_pdown=0;
+if (pleft||release_pleft) time_pleft++; else time_pleft=0;
+if (pright||release_pright) time_pright++; else time_pright=0;
+if (start||release_start) time_start++; else time_start=0;
+if (select||release_select) time_select++; else time_select=0;
 
 // Update common terms
 interact=a;

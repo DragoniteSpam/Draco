@@ -10,3 +10,4 @@ variable=0;
 
 equip=ItemEquipClasses.no;
 hardware=ItemHardwareClasses.no;
+armor=ItemArmorTypes.heavy;

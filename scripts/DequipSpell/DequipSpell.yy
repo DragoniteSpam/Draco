@@ -1,8 +1,11 @@
 {
-    "id": "926abf58-2bb2-4c07-98df-b4316c5450e8",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "DequipSpell",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "resourceType": "GMScript",
+  "resourceVersion": "1.0",
+  "name": "DequipSpell",
+  "isCompatibility": false,
+  "isDnD": false,
+  "parent": {
+    "name": "Magic",
+    "path": "folders/Scripts/Scripting/Code/Magic.yy",
+  },
 }
